@@ -32,7 +32,7 @@ function calcularCompra() {
     
     // ESCREVA SEU CÓDIGO AQUI:
 
-    let valorComDesconto = valorOriginal - desconto;
+    let valorComDesconto = (valorOriginal - desconto);
   
     // REGRA 3: Cálculo da Taxa de Frete
    
@@ -57,7 +57,7 @@ function calcularCompra() {
     // Ela deve guardar a soma (+) do 'valorComDesconto' com a taxa do 'frete'.
     
     // ESCREVA SEU CÓDIGO AQUI:
-    let totalFinal = valorComDesconto + frete;
+    let totalFinal = (valorComDesconto + frete);
 
     // =================================================================
     //  SEU CÓDIGO TERMINA AQUI 
