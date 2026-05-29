@@ -15,14 +15,14 @@ function calcularCompra() {
     // REGRA 1: Validação do Cupom de Desconto
     //O nome do cupom oficial é "PROMO10". 
     // Use .toUpperCase() para garantir que funcione se o usuário digitar "promo10" ou "Promo10"
-    
     // Faça um teste condicional (if): se o 'cupomDigitado' for igual ao cupom oficial o valor de desconto será = a 10
-     
     // DICA: Use a estrutura -> if (variavel.toUpperCase() === "VALOR") { valor da vaiável desconto}
     
     let desconto = 0;
     
-
+    if(cupomDigitado.toUppercase() === "PROMO10"){
+        let desconto = 10;
+    }
 
     // REGRA 2: Aplicação do Desconto no Valor do Produto
 
@@ -32,7 +32,7 @@ function calcularCompra() {
     
     // ESCREVA SEU CÓDIGO AQUI:
 
-
+    let valorComDesconto = valorOriginal - desconto;
   
     // REGRA 3: Cálculo da Taxa de Frete
    
@@ -45,15 +45,19 @@ function calcularCompra() {
     
     // ESCREVA SEU IF / ELSE AQUI:
 
+    if(valorComDesconto >= 100){
+        let frete = 0;
+    } else {
+        let frete = 15;
+    }
 
-   
     // REGRA 4: Total Geral da Compra
     // -----------------------------------------------------------------
     // Crie a última variável chamada 'totalFinal'.
     // Ela deve guardar a soma (+) do 'valorComDesconto' com a taxa do 'frete'.
     
     // ESCREVA SEU CÓDIGO AQUI:
-
+    let totalFinal = valorComDesconto + frete;
 
     // =================================================================
     //  SEU CÓDIGO TERMINA AQUI 
@@ -67,3 +71,4 @@ function calcularCompra() {
         Frete: R$ ${frete === 0 ? "Grátis" : "R$ " + frete.toFixed(2)}<br>
         <strong>Total a pagar: R$ ${totalFinal.toFixed(2)}</strong>
     `;
+}
