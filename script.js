@@ -20,7 +20,7 @@ function calcularCompra() {
     
     let desconto = 0;
     
-    if(cupomDigitado.toUppercase === "PROMO10"){
+    if(cupomDigitado.toUpperCase() === "PROMO10"){
         let desconto = 10;
     }
 
