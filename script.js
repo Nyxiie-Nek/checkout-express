@@ -21,7 +21,7 @@ function calcularCompra() {
     let desconto = 0;
     
     if(cupomDigitado.toUpperCase() === "PROMO10"){
-        let desconto = 10;
+        desconto = 10;
     }
 
     // REGRA 2: Aplicação do Desconto no Valor do Produto
@@ -46,9 +46,9 @@ function calcularCompra() {
     // ESCREVA SEU IF / ELSE AQUI:
 
     if(valorComDesconto >= 100){
-        let frete = 0;
+        frete = 0;
     } else {
-        let frete = 15;
+        frete = 15;
     }
 
     // REGRA 4: Total Geral da Compra
